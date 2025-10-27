@@ -43,7 +43,7 @@ Each service is configured in the `docker-compose.yml` file, and the build proce
 ```bash
 git clone https://github.com/Igormcosta/basic_docker.git
 cd basic_docker
-
-### 1. Clone the repository
+```
+### 2. Run
 ```bash
 sudo docker compose up
