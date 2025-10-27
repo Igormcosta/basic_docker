@@ -1,29 +1,43 @@
-<<<<<<< HEAD
-# README
+# 🧱 Rails + Docker + Sidekiq + Redis
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Este projeto foi criado com o objetivo de **praticar e estudar** conceitos de containerização, background jobs e integração entre serviços utilizando **Ruby on Rails**, **Docker**, **PostgreSQL**, **Sidekiq** e **Redis**.
 
-Things you may want to cover:
+---
 
-* Ruby version
+## 🚀 Tecnologias utilizadas
 
-* System dependencies
+- **Ruby on Rails** – Framework principal da aplicação  
+- **PostgreSQL** – Banco de dados relacional  
+- **Sidekiq** – Processamento assíncrono de jobs  
+- **Redis** – Armazenamento em memória utilizado pelo Sidekiq  
+- **Docker** & **Docker Compose** – Containerização e orquestração dos serviços
 
-* Configuration
+---
 
-* Database creation
+## ⚙️ Estrutura do projeto
 
-* Database initialization
+O projeto está totalmente containerizado com **Docker Compose**, contendo os seguintes serviços:
 
-* How to run the test suite
+- `web`: aplicação Rails  
+- `db`: banco de dados PostgreSQL  
+- `redis`: servidor Redis  
+- `sidekiq`: execução dos jobs
 
-* Services (job queues, cache servers, search engines, etc.)
+Cada serviço é configurado no arquivo `docker-compose.yml`, e o build da aplicação é definido no `Dockerfile`.
 
-* Deployment instructions
+---
 
-* ...
-=======
-# basic_docker
-A study using docker, rails, redis, sidekiq and postgresSQL
->>>>>>> 27fb1ea41199b1248c8461aefa50bd41758e1914
+## 💡 Funcionalidades
+
+- **Home page simples**, sem CSS, apenas para execução e visualização de testes.  
+- **Job criado para demonstração**, permitindo visualizar o funcionamento do Sidekiq na interface administrativa.  
+- Integração completa entre **Rails**, **Sidekiq** e **Redis** dentro do ambiente Docker.
+
+---
+
+## 🧩 Como executar o projeto
+
+### 1. Clonar o repositório
+```bash
+git clone https://github.com/Igormcosta/basic_docker.git
+cd nome-do-projeto
